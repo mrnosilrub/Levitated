@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Levitated Metals | Advanced Aluminum Recovery</title>
+
+  <!-- Tailwind v3 CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Tailwind custom theme -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50:  '#f5f7ff',
+              100: '#e9ecff',
+              500: '#1e40af',    /* deep indigo for CTA buttons */
+              600: '#1e3a8a',
+            },
+          },
+        },
+      },
+    };
+  </script>
+
+  <!-- SEO / Open Graph -->
+  <meta name="description" content="Levitated Metals transforms mixed non‑ferrous scrap into high‑purity aluminum feedstock using state‑of‑the‑art dual‑stage heavy‑media technology."/>
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="Levitated Metals | Advanced Aluminum Recovery" />
+  <meta property="og:description" content="High‑quality, low‑magnesium Twitch and non‑ferrous products for global smelters." />
+  <meta property="og:image"       content="https://images.unsplash.com/photo-1611095564984-382d9c9c92e4?auto=format&fit=crop&w=1200&q=60" />
+  <link rel="icon" href="favicon.ico" />
+  <style>[x-cloak]{display:none}</style>
+</head>
+
+<body class="antialiased text-gray-800 scroll-smooth bg-gray-50">
+<!-- ╔═══════════════NAV═══════════════ -->
+<header class="fixed inset-x-0 top-0 z-50 bg-white/90 backdrop-blur shadow-sm" x-data="{open:false}">
+  <div class="max-w-7xl mx-auto px-6 flex items-center justify-between h-16">
+    <a href="#top" class="font-semibold text-lg tracking-wide text-brand-600">Levitated Metals</a>
+    <nav class="hidden md:flex gap-8 text-sm">
+      <a href="#about" class="hover:text-brand-600">About</a>
+      <a href="#process" class="hover:text-brand-600">Technology</a>
+      <a href="#products" class="hover:text-brand-600">Products</a>
+      <a href="#sustainability" class="hover:text-brand-600">Impact</a>
+      <a href="#contact" class="hover:text-brand-600">Contact</a>
+    </nav>
+    <button @click="open=!open" class="md:hidden">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+           viewBox="0 0 24 24" stroke="currentColor">
+        <path x-show="!open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"/>
+        <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"/>
+      </svg>
+    </button>
+  </div>
+  <!-- Mobile -->
+  <div x-show="open" x-cloak class="md:hidden bg-white border-t">
+    <nav class="flex flex-col py-4 px-6 space-y-4 text-sm">
+      <a href="#about" @click="open=false">About</a>
+      <a href="#process" @click="open=false">Technology</a>
+      <a href="#products" @click="open=false">Products</a>
+      <a href="#sustainability" @click="open=false">Impact</a>
+      <a href="#contact" @click="open=false">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ╔═══════════════HERO═══════════════ -->
+<section id="top" class="relative flex items-center justify-center h-[90vh]">
+  <img src="https://images.unsplash.com/photo-1509228468518-d1a662d1015b?auto=format&fit=crop&w=1950&q=80"
+       alt="Recycling plant" class="absolute inset-0 w-full h-full object-cover" />
+  <div class="absolute inset-0 bg-brand-600/70 mix-blend-multiply"></div>
+  <div class="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
+    <h1 class="text-4xl md:text-6xl font-bold leading-tight drop-shadow">
+      Precision‑Engineered&nbsp;<span class="underline decoration-brand-100">Aluminum</span><br class="hidden md:block"/> from Recycled Scrap
+    </h1>
+    <p class="mt-6 text-lg md:text-xl text-brand-100/90">
+      Delivering low‑magnesium Twitch and critical non‑ferrous fractions to foundries across North America and beyond.
+    </p>
+    <a href="#contact"
+       class="mt-10 inline-block bg-white text-brand-600 font-semibold px-8 py-3 rounded shadow hover:bg-brand-50 transition">
+      Get in Touch
+    </a>
+  </div>
+</section>
+
+<!-- ╔═══════════════ABOUT═══════════════ -->
+<section id="about" class="py-24">
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+    <div>
+      <h2 class="section-title">Who We Are</h2>
+      <p class="mt-6 leading-relaxed">
+        Founded by MIT‑trained engineer <strong>Ronak Shah</strong> in 2019 and now a proud member of the <strong>Mervis Industries</strong> family,
+        Levitated Metals operates a world‑class 10‑acre heavy‑media plant in the Houston metro area. Our
+        singular focus: extract maximum value from mixed non‑ferrous shred and deliver certified, melt‑ready
+        feedstock to aluminum smelters worldwide.
+      </p>
+      <p class="mt-4">
+        With a design capacity of <strong>10 million lb</strong> per month, we leverage data‑driven process control, a
+        culture of continuous improvement, and supply‑chain flexibility (truck & rail) to support our partners
+        throughout the U.S., Mexico, and global markets.
+      </p>
+    </div>
+    <img src="https://images.unsplash.com/photo-1603993097397-89d87b6c1330?auto=format&fit=crop&w=900&q=60"
+         class="rounded-lg shadow-lg" alt="Plant aerial" />
+  </div>
+</section>
+
+<!-- ╔═══════════════TECH PROCESS═══════════════ -->
+<section id="process" class="py-24 bg-gray-100">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="section-title text-center">Dual‑Stage Heavy‑Media&nbsp;Technology</h2>
+    <div class="mt-16 grid lg:grid-cols-3 gap-12">
+      <!-- Stage 1 -->
+      <div class="bg-white p-8 rounded-lg shadow-sm ring-1 ring-gray-100">
+        <div class="flex items-center justify-center w-12 h-12 rounded-full bg-brand-500 text-white">
+          1
+        </div>
+        <h3 class="mt-6 font-semibold text-lg">Magnesium & Low‑Value Al Removal</h3>
+        <p class="mt-4 text-sm leading-relaxed">
+          Zorba feeds a dense‑media bath (~1.9 SG). Encapsulated Mg fractions & lower‑grade aluminum float, enabling early rejection.
+        </p>
+      </div>
+      <!-- Stage 2 -->
+      <div class="bg-white p-8 rounded-lg shadow-sm ring-1 ring-gray-100">
+        <div class="flex items-center justify-center w-12 h-12 rounded-full bg-brand-500 text-white">
+          2
+        </div>
+        <h3 class="mt-6 font-semibold text-lg">Al vs Heavy Split</h3>
+        <p class="mt-4 text-sm leading-relaxed">
+          Sinks pass to a 3.2 SG bath separating high‑density Cu/Brass/Stainless (Zebra) from clean aluminum
+          (Twitch). Inline QC audits ensure chemistry spec on every lot.
+        </p>
+      </div>
+      <!-- QC -->
+      <div class="bg-white p-8 rounded-lg shadow-sm ring-1 ring-gray-100">
+        <div class="flex items-center justify-center w-12 h-12 rounded-full bg-brand-500 text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+               viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+               d="M5 13l4 4L19 7"/></svg>
+        </div>
+        <h3 class="mt-6 font-semibold text-lg">Quality Assurance</h3>
+        <p class="mt-4 text-sm leading-relaxed">
+          Final gravity check, metal accounting, and handheld LIBS validation lock in magnesium ≤ 0.5 % and iron ≤ 0.2 %—well below downstream alloy limits.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ╔═══════════════PRODUCTS═══════════════ -->
+<section id="products" class="py-24">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="section-title text-center">Our Product Slate</h2>
+    <div class="mt-16 grid md:grid-cols-3 gap-8">
+      <!-- Twitch -->
+      <article class="product-card">
+        <h3 class="product-title">Twitch</h3>
+        <p>Low‑Mg, low‑Fe aluminum scrap fraction (<2 % Mg).</p>
+      </article>
+      <!-- Zebra -->
+      <article class="product-card">
+        <h3 class="product-title">Zebra Heavies</h3>
+        <p>Brass, copper, Zn, non‑mag SS, Cu wire blend for specialty refiners.</p>
+      </article>
+      <!-- Zeppelin -->
+      <article class="product-card">
+        <h3 class="product-title">Zeppelin</h3>
+        <p>Al/Mg mix ideal for magnesium‑tolerant alloy streams.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ╔═══════════════SUSTAINABILITY═══════════════ -->
+<section id="sustainability" class="py-24 bg-gray-100">
+  <div class="max-w-5xl mx-auto px-6 text-center">
+    <h2 class="section-title">Circularity in Action</h2>
+    <p class="mt-6 leading-relaxed max-w-3xl mx-auto">
+      Every metric ton of recycled aluminum saves up to <strong>95 % energy</strong> vs primary production and prevents
+      7.6 t CO₂‑eq emissions. By closing the loop on auto‑shred residue, Levitated Metals advances the circular
+      economy—one high‑purity billet at a time.
+    </p>
+  </div>
+</section>
+
+<!-- ╔═══════════════CONTACT═══════════════ -->
+<section id="contact" class="py-24">
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16">
+    <div>
+      <h2 class="section-title">Let’s Talk</h2>
+      <p class="mt-6">
+        Whether you’re sourcing premium Twitch, looking to market Zorba, or exploring joint R&D, our team is ready.
+      </p>
+      <ul class="mt-6 space-y-4 text-sm">
+        <li><strong>Address:</strong> 18920 Celia Way, New Caney, TX 77357</li>
+        <li><strong>Phone:</strong> <a href="tel:+12817298700" class="text-brand-600 underline">+1 281‑729‑8700</a></li>
+        <li><strong>Email:</strong> <a href="mailto:info@levitatedmetals.com" class="text-brand-600 underline">info@levitatedmetals.com</a></li>
+      </ul>
+    </div>
+    <!-- Contact Form (Netlify‑compatible) -->
+    <form name="contact" method="POST" data-netlify="true"
+          class="bg-white p-8 rounded-lg shadow-sm space-y-4">
+      <input type="hidden" name="form-name" value="contact" />
+      <div>
+        <label class="sr-only" for="name">Name</label>
+        <input id="name" name="name" type="text" required placeholder="Name"
+               class="input" />
+      </div>
+      <div>
+        <label class="sr-only" for="email">Email</label>
+        <input id="email" name="email" type="email" required placeholder="Email"
+               class="input" />
+      </div>
+      <div>
+        <label class="sr-only" for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required
+                  placeholder="How can we help?"
+                  class="input"></textarea>
+      </div>
+      <button type="submit"
+              class="w-full bg-brand-500 hover:bg-brand-600 text-white font-semibold py-3 rounded transition">
+        Send Message
+      </button>
+      <p class="text-xs text-gray-500 pt-2">We’ll reply within one business day.</p>
+    </form>
+  </div>
+</section>
+
+<!-- ╔═══════════════FOOTER═══════════════ -->
+<footer class="py-12 bg-gray-900 text-gray-400 text-sm">
+  <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+    <p>© <span id="year"></span> Levitated Metals LLC. All rights reserved.</p>
+    <div class="space-x-4">
+      <a href="https://www.linkedin.com/company/levitatedmetals/" target="_blank" rel="noopener"
+         class="hover:text-white">LinkedIn</a>
+      <a href="#top" class="hover:text-white">Back to top</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Year auto‑update -->
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+<!-- Quick utility classes -->
+<style>
+  .section-title{ @apply text-3xl md:text-4xl font-bold text-gray-900; }
+  .input{ @apply w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand-500; }
+  .product-card{ @apply bg-white p-8 rounded-lg shadow-sm ring-1 ring-gray-100 text-center; }
+  .product-title{ @apply font-semibold text-xl mb-2; }
+</style>
+
+<!-- Alpine.js for the mobile nav -->
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</body>
+</html>
