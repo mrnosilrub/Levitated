@@ -15,10 +15,10 @@
         extend: {
           colors: {
             brand: {
-              50:  '#f5f7ff',
-              100: '#e9ecff',
-              500: '#1e40af',    /* deep indigo for CTA buttons */
-              600: '#1e3a8a',
+              50:  '#ffffff',
+              100: '#54708A',
+              500: '#54708A',    /* primary accent */
+              600: '#3F4140',
             },
           },
         },
@@ -36,7 +36,7 @@
   <style>[x-cloak]{display:none}</style>
 </head>
 
-<body class="antialiased text-gray-800 scroll-smooth bg-gray-50">
+<body class="antialiased text-brand-600 scroll-smooth bg-[#FFFFFF]">
 <!-- ╔═══════════════NAV═══════════════ -->
 <header class="fixed inset-x-0 top-0 z-50 bg-white/90 backdrop-blur shadow-sm" x-data="{open:false}">
   <div class="max-w-7xl mx-auto px-6 flex items-center justify-between h-16">
@@ -115,12 +115,12 @@
 </section>
 
 <!-- ╔═══════════════TECH PROCESS═══════════════ -->
-<section id="process" class="py-24 bg-gray-100">
+<section id="process" class="py-24 bg-brand-100/10">
   <div class="max-w-6xl mx-auto px-6">
     <h2 class="section-title text-center">Dual‑Stage Heavy‑Media&nbsp;Technology</h2>
     <div class="mt-16 grid lg:grid-cols-3 gap-12">
       <!-- Stage 1 -->
-      <div class="bg-white p-8 rounded-lg shadow-sm ring-1 ring-gray-100">
+      <div class="bg-white p-8 rounded-lg shadow-sm ring-1 ring-brand-100/20">
         <div class="flex items-center justify-center w-12 h-12 rounded-full bg-brand-500 text-white">
           1
         </div>
@@ -130,7 +130,7 @@
         </p>
       </div>
       <!-- Stage 2 -->
-      <div class="bg-white p-8 rounded-lg shadow-sm ring-1 ring-gray-100">
+      <div class="bg-white p-8 rounded-lg shadow-sm ring-1 ring-brand-100/20">
         <div class="flex items-center justify-center w-12 h-12 rounded-full bg-brand-500 text-white">
           2
         </div>
@@ -140,7 +140,7 @@
         </p>
       </div>
       <!-- QC -->
-      <div class="bg-white p-8 rounded-lg shadow-sm ring-1 ring-gray-100">
+      <div class="bg-white p-8 rounded-lg shadow-sm ring-1 ring-brand-100/20">
         <div class="flex items-center justify-center w-12 h-12 rounded-full bg-brand-500 text-white">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
                viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -180,7 +180,7 @@
 </section>
 
 <!-- ╔═══════════════SUSTAINABILITY═══════════════ -->
-<section id="sustainability" class="py-24 bg-gray-100">
+<section id="sustainability" class="py-24 bg-brand-100/10">
   <div class="max-w-5xl mx-auto px-6 text-center">
     <h2 class="section-title">Circularity in Action</h2>
     <p class="mt-6 leading-relaxed max-w-3xl mx-auto">
@@ -229,13 +229,13 @@
               class="w-full bg-brand-500 hover:bg-brand-600 text-white font-semibold py-3 rounded transition">
         Send Message
       </button>
-      <p class="text-xs text-gray-500 pt-2">We’ll reply within one business day.</p>
+      <p class="text-xs text-brand-600/70 pt-2">We’ll reply within one business day.</p>
     </form>
   </div>
 </section>
 
 <!-- ╔═══════════════FOOTER═══════════════ -->
-<footer class="py-12 bg-gray-900 text-gray-400 text-sm">
+<footer class="py-12 bg-brand-600 text-white/80 text-sm">
   <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
     <p>© <span id="year"></span> Levitated Metals LLC. All rights reserved.</p>
     <div class="space-x-4">
@@ -251,9 +251,9 @@
 
 <!-- Quick utility classes -->
 <style>
-  .section-title{ @apply text-3xl md:text-4xl font-bold text-gray-900; }
+  .section-title{ @apply text-3xl md:text-4xl font-bold text-brand-600; }
   .input{ @apply w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand-500; }
-  .product-card{ @apply bg-white p-8 rounded-lg shadow-sm ring-1 ring-gray-100 text-center; }
+  .product-card{ @apply bg-white p-8 rounded-lg shadow-sm ring-1 ring-brand-100/20 text-center; }
   .product-title{ @apply font-semibold text-xl mb-2; }
 </style>
 
