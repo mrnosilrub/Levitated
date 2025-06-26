@@ -40,7 +40,7 @@
 <!-- ╔═══════════════NAV═══════════════ -->
 <header class="fixed inset-x-0 top-0 z-50 bg-white shadow-sm" x-data="{open:false}">
   <div class="max-w-7xl mx-auto px-6 flex items-center justify-between h-16">
-    <a href="#top" class="flex items-center">
+    <a href="#top" class="flex items-center h-full">
       <img src="assets/logo.png" alt="Levitated Metals logo" class="h-16 w-auto" />
       <span class="sr-only">Levitated Metals</span>
     </a>
@@ -78,7 +78,7 @@
   <!-- Local hero image will be uploaded separately -->
   <img src="assets/hero.jpg"
        alt="Recycling plant" class="absolute inset-0 w-full h-full object-cover" />
-  <div class="absolute inset-0 bg-brand-600/70 mix-blend-multiply"></div>
+  <div class="absolute inset-0 bg-brand-600/80 mix-blend-multiply"></div>
   <div class="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
     <h1 class="text-4xl md:text-6xl font-bold leading-tight drop-shadow">
       <span>Aluminum.</span> Elevated.
@@ -167,29 +167,14 @@
       <!-- Twitch -->
       <a href="pdfs/twitch.pdf" class="product-card block rounded-lg">
         <h3 class="product-title">Twitch</h3>
-        <ul class="text-left text-sm space-y-1">
-          <li>Chemistry: Si 5.5 % | Cu 1.7 % | Mg 0.35 % | Fe 0.8 %</li>
-          <li>Cleanliness: Non-metal &lt; 0.25 % | 91 % melt-yield in rotary/reverb trials</li>
-          <li>Size: 12 – 150 mm gravity-float aluminum</li>
-        </ul>
       </a>
       <!-- High-Red Heavies -->
       <a href="pdfs/heavies.pdf" class="product-card block rounded-lg">
         <h3 class="product-title">High-Red Heavies</h3>
-        <ul class="text-left text-sm space-y-1">
-          <li>Composition: 24 % Cu + 22 % brass (≈ 45 – 50 % red metal) | ≈ 37 % Zn</li>
-          <li>Contaminants: Stainless + Fe-Al attachments ≈ 14 % | Non-metal &lt; 1 %</li>
-          <li>Size: 12 – 150 mm, hand-picked for uniformity</li>
-        </ul>
       </a>
       <!-- Zeppelin -->
       <a href="pdfs/zeppelin.pdf" class="product-card block rounded-lg">
         <h3 class="product-title">Zeppelin</h3>
-        <ul class="text-left text-sm space-y-1">
-          <li>Composition: ≈ 30 % Al | ≈ 36 % Mg | ≈ 15 % Al-plastic composites | Balance hose/coax/trash</li>
-          <li>Form: 12 – 150 mm pieces | Fines &lt; 10 %</li>
-          <li>Use: Sold as-is for Mg recovery, residue processing, or landfill-diversion trials</li>
-        </ul>
       </a>
     </div>
   </div>
@@ -282,9 +267,9 @@
 <style type="text/tailwindcss">
   .section-title{ @apply text-3xl md:text-4xl font-bold text-brand-600; }
   .input{ @apply w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand-500; }
-  .card{ @apply bg-white p-8 rounded-lg shadow-sm ring-2 ring-brand-100/40; }
+  .card{ @apply bg-white p-8 rounded-lg shadow-sm border-2 border-brand-100/40; }
   .product-card{ @apply card text-center transition hover:-translate-y-1 hover:shadow-lg; }
-  .product-title{ @apply font-semibold text-xl mb-2; }
+  .product-title{ @apply font-semibold text-2xl mb-2; }
 </style>
 
 <!-- Alpine.js for the mobile nav -->
